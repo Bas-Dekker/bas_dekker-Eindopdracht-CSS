@@ -1,0 +1,90 @@
+$background: #c3cfe2;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  background: $background;
+}
+
+.icons {
+  position: fixed;
+  top: 30%;
+  right: 0%;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  &__laptop-code {
+    background-color: #e17b77;
+    color: white;
+  }
+  &__twitter {
+    background-color: #00aced;
+    color: white;
+  }
+  &__facebook {
+    background-color: #3b5998;
+    color: white;
+  }
+  &__github {
+    background-color: #333;
+    color: white;
+  }
+  &__linkedin {
+    background-color: #007bb6;
+    color: white;
+  }
+
+  & a {
+    margin: 2px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    transform: translate(195px, 0px);
+    transition: all 0.5s;
+  }
+
+  & a:hover {
+    transform: translate(0px, 0px);
+  }
+
+  & a i {
+    margin-right: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+
+  & a:hover i {
+    transform: rotate(-360deg);
+  }
+
+  & a i.fa-laptop-code {
+    color: #e17b77;
+  }
+
+  & a i.fa-twitter {
+    color: #00aced;
+  }
+
+  & a i.fa-linkedin-in {
+    color: #007bb6;
+  }
+
+  & a i.fa-facebook-f {
+    color: #3b5998;
+  }
+  & a i.fa-github {
+    color: #333;
+  }
+}
